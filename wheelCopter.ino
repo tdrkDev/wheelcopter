@@ -82,27 +82,6 @@ bool curPrinted = false;
 
 void loop() {
   enc.tick();
-  /* if (enc.isRight()) {
-    rootEnc++;
-  } else if (enc.isLeft()) {
-    rootEnc--;
-  } else if (enc.isFastR()) {
-    rootEnc += 10;
-  } else if (enc.isFastL()) {
-    rootEnc -= 10;
-  }
-
-  rootEnc = constrain(rootEnc, 1000, 2000);
-
-  if (millis() >= prevMillis + 50) {
-    lcd.setCursor(0, 0);
-    lcd.print(rootEnc);
-    lcd.print("    ");
-
-    prevMillis = millis();
-  }
-
-  OCR1B = rootEnc; */
 
   // RC get
   if (eedata.lk == 0) {
